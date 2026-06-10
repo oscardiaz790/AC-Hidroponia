@@ -1,4 +1,4 @@
-// ===== NAVBAR SCROLL =====
+// NAVBAR SCROLL
 const navbar = document.getElementById('navbar');
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ===== MENÚ HAMBURGUESA =====
+// MENÚ HAMBURGUESA
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('activo');
   navLinks.classList.toggle('abierto');
@@ -25,7 +25,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ===== SCROLL SUAVE A SECCIONES =====
+// SCROLL SUAVE A SECCIONES
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -37,7 +37,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// ===== ANIMACIONES FADE-IN AL HACER SCROLL =====
+// ANIMACIONES FADE-IN AL HACER SCROLL
 const elementosFadeIn = document.querySelectorAll('.fade-in');
 
 const observador = new IntersectionObserver((entries) => {
@@ -53,7 +53,7 @@ const observador = new IntersectionObserver((entries) => {
 
 elementosFadeIn.forEach(el => observador.observe(el));
 
-// ===== CONTADOR ANIMADO EN HERO =====
+// CONTADOR ANIMADO EN HERO
 function animarContador(elemento, fin, duracion) {
   let inicio = 0;
   const incremento = fin / (duracion / 16);
@@ -83,7 +83,7 @@ const statsObservador = new IntersectionObserver((entries) => {
 const heroStats = document.querySelector('.hero-stats');
 if (heroStats) statsObservador.observe(heroStats);
 
-// ===== FORMULARIO DE CONTACTO =====
+// FORMULARIO DE CONTACTO
 const formulario = document.getElementById('formularioContacto');
 const mensajeExito = document.getElementById('mensajeExito');
 
@@ -95,7 +95,7 @@ if (formulario) {
     btnEnviar.textContent = 'Enviando...';
     btnEnviar.disabled = true;
 
-    // Simulación de envío (aquí puedes conectar tu backend o EmailJS)
+   
     setTimeout(() => {
       formulario.reset();
       btnEnviar.textContent = '✓ Mensaje Enviado';
@@ -112,7 +112,7 @@ if (formulario) {
   });
 }
 
-// ===== BADGE HORARIO (Abierto / Cerrado) =====
+// BADGE HORARIO (Abierto / Cerrado)
 function actualizarHorario() {
   const badge = document.getElementById('badgeHorario');
   if (!badge) return;
