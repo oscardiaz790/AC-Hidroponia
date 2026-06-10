@@ -1,4 +1,4 @@
-/* ===== VARIABLES ===== */
+/* VARIABLES */
 :root {
   --verde-oscuro: #1a4d2e;
   --verde-medio: #2d7a4f;
@@ -15,7 +15,7 @@
   --transicion: all 0.3s ease;
 }
 
-/* ===== RESET ===== */
+/* RESET */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ ul {
   list-style: none;
 }
 
-/* ===== TIPOGRAFÍA ===== */
+/* TIPOGRAFÍA */
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
   line-height: 1.2;
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
-/* ===== BOTONES ===== */
+/* BOTONES */
 .btn {
   display: inline-block;
   padding: 0.85rem 2rem;
@@ -108,7 +108,7 @@ h1, h2, h3, h4 {
   transform: translateY(-2px);
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 #navbar {
   position: fixed;
   top: 0;
@@ -235,7 +235,7 @@ h1, h2, h3, h4 {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ===== HERO ===== */
+/* HERO */
 #inicio {
   min-height: 100vh;
   background: linear-gradient(135deg, var(--verde-oscuro) 0%, var(--verde-medio) 60%, var(--verde-claro) 100%);
@@ -390,7 +390,7 @@ h1, h2, h3, h4 {
   50% { transform: scale(1.02); box-shadow: 0 0 0 20px rgba(76, 175, 125, 0); }
 }
 
-/* ===== SECCIONES GENERALES ===== */
+/* SECCIONES GENERALES */
 section {
   padding: 5rem 1.5rem;
 }
@@ -400,7 +400,7 @@ section {
   margin: 0 auto;
 }
 
-/* ===== NOSOTROS ===== */
+/* NOSOTROS */
 #nosotros {
   background-color: var(--verde-menta);
 }
@@ -462,7 +462,7 @@ section {
   font-size: 1.2rem;
 }
 
-/* ===== PRODUCTOS ===== */
+/* PRODUCTOS */
 #productos {
   background-color: var(--blanco);
 }
@@ -535,7 +535,7 @@ section {
   border-radius: 50px;
 }
 
-/* ===== PROCESO ===== */
+/* PROCESO */
 #proceso {
   background-color: var(--gris-claro);
 }
@@ -593,7 +593,7 @@ section {
   color: var(--gris-texto);
 }
 
-/* ===== COBERTURA ===== */
+/* COBERTURA */
 #cobertura {
   background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-medio));
   color: var(--blanco);
@@ -644,7 +644,7 @@ section {
   margin-top: 0.2rem;
 }
 
-/* ===== BENEFICIOS ===== */
+/* BENEFICIOS */
 #beneficios {
   background-color: var(--blanco);
 }
@@ -684,7 +684,7 @@ section {
   color: var(--gris-texto);
 }
 
-/* ===== CONTACTO - TARJETAS ===== */
+/* CONTACTO - TARJETAS */
 #contacto {
   background-color: var(--verde-menta);
 }
@@ -769,7 +769,7 @@ section {
   border: 1px solid var(--verde-suave);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   background-color: var(--verde-oscuro);
   color: rgba(255,255,255,0.8);
@@ -839,7 +839,7 @@ footer {
   opacity: 0.6;
 }
 
-/* ===== BOTÓN WHATSAPP FLOTANTE ===== */
+/* BOTÓN WHATSAPP FLOTANTE */
 .whatsapp-btn {
   position: fixed;
   bottom: 2rem;
@@ -863,7 +863,7 @@ footer {
   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
 }
 
-/* ===== ANIMACIONES ENTRADA ===== */
+/* ANIMACIONES ENTRADA */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -875,7 +875,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-contenedor {
     grid-template-columns: 1fr;
